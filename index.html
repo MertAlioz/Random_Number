@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Nummber Creator </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row main">
+            <div class="col-lg-12 text-center mb-2">
+                    <h6>PhoneNumber Creator</h6>
+            <div class="form-group p-3">
+              <input type="number" name="number" class="form-control" placeholder="Bir Sayı Gir" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Oluşturulacak Numara Miktarını girin</small>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" id="saveNumber" style="float: right;" type="submit">Saved</button>
+                <button class="btn btn-danger mr-5" id="clearButton" style="float: right;" type="submit">Clear Data</button>
+            </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <table class="table">
+                    <thead class="thead-inverse ">
+                        <tr>
+                            <th>ID</th>
+                            <th>Phone Number</th>
+                            <th>Others</th>
+                        </tr>
+                        </thead>
+                        <tbody id="NumberList">
+                        </tbody>
+                </table>
+            </div>
+        <div class="col-lg-12 text-center">
+<small>Create By Mert the code developer</small>
+
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE5CD;</i>
+				</div>				
+				<h4 class="modal-title w-100">Üzgünüm!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Maksimum İstek Limiti Aşıldı</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger btn-block" data-dismiss="modal">Özür Dilerim Abi</button>
+			</div>
+		</div>
+	</div>
+</div> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="./main.js"></script>
+</body>
+
+</html>
